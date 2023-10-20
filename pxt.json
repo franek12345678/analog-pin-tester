@@ -4,7 +4,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "power": "github:microbit-foundation/pxt-microbit-v2-power#v0.2.3",
+        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6"
     },
     "files": [
         "main.blocks",
@@ -15,7 +17,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.17",
+        "target": "6.0.19",
         "targetId": "microbit"
     },
     "supportedTargets": [

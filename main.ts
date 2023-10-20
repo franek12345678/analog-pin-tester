@@ -1,4 +1,12 @@
 let dffgshd = 0
+function powller () {
+    power.fullPowerOn(FullPowerSource.A)
+    power.fullPowerOn(FullPowerSource.B)
+    power.lowPowerEnable(LowPowerEnable.Prevent)
+}
+function rotato () {
+    display.rotateTo(display.Direction.Normal)
+}
 basic.forever(function () {
     dffgshd = pins.analogReadPin(AnalogPin.P0)
     led.plotBarGraph(
@@ -9,4 +17,8 @@ basic.forever(function () {
         basic.clearScreen()
         basic.showNumber(dffgshd)
     }
+})
+control.inBackground(function () {
+    rotato()
+    powller()
 })
